@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "popup-icon-web-part-client-side-solution",
+    "id": "cf0bc446-e5f8-49b7-8f4f-a460089f0534",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.20.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "popup-icon-web-part description"
+      },
+      "longDescription": {
+        "default": "popup-icon-web-part description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "popup-icon-web-part Feature",
+        "description": "The feature that activates elements of the popup-icon-web-part solution.",
+        "id": "67a6befd-b1a2-4cb1-be2a-da2a2749f024",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/popup-icon-web-part.sppkg"
+  }
+}

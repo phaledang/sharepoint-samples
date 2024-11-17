@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "18.20.4",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.24.0"
+    },
+    "version": "1.20.0",
+    "libraryName": "popup-icon-web-part",
+    "libraryId": "cf0bc446-e5f8-49b7-8f4f-a460089f0534",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "popup-icon-web-part",
+    "solutionShortDescription": "popup-icon-web-part description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

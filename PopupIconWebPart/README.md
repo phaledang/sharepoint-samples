@@ -3,21 +3,6 @@
 ## IconToOpenPopupWebPart
 
 The **IconToOpenPopupWebPart** is a SharePoint Framework (SPFx) web part designed to display a configurable icon that opens a popup with an embedded iframe. It provides flexibility to customize the icon, hover text, caption, and iframe content.
-
-## Setup and init project
-[setup-and-init-project](/documents/setup-and-init-project.md)
-
-
-## Local debug
-[local-debug](/documents/local-debug.md)
-
-## Deployment
-[prepare-deployment-package](/documents/prepare-deployment-package.md)
-[prepare-deployment-package](/documents/prepare-deployment-package.md)
-
-## Add webpart to page
-[using-the-deployed-webpart](/documents/using-the-deployed-webpart.md)
-
 ## Key Features
 
 1. **Configurable Icon**:
@@ -49,15 +34,21 @@ The **IconToOpenPopupWebPart** is a SharePoint Framework (SPFx) web part designe
 
 - **Environment Setup**:
   - Requires Node.js, Gulp, and the SharePoint Framework Yeoman generator.
-
+  - [setup-and-init-project](/documents/setup-and-init-project.md)
+  
 - **Debug Locally**:
   - Uses the SharePoint Workbench (local or online) for testing during development.
-
+  - [local-debug](/documents/local-debug.md)
+  - 
 - **Deployment**:
   - Packaged as a `.sppkg` file and deployed to the SharePoint App Catalog.
   - Can be added to modern SharePoint pages via the web part gallery.
+  - [prepare-deployment-package](/documents/prepare-deployment-package.md)
+  - [prepare-deployment-package](/documents/prepare-deployment-package.md)
+  
+- **Add webpart to page**
+  - [using-the-deployed-webpart](/documents/using-the-deployed-webpart.md)
 
----
 
 ## Use Cases
 
@@ -72,14 +63,46 @@ The **IconToOpenPopupWebPart** is a SharePoint Framework (SPFx) web part designe
 
 ---
 
-## Configuration Options
+## **Configuration Options**
 
-| **Property**   | **Description**                                             | **Default Value**                     |
-|-----------------|-------------------------------------------------------------|---------------------------------------|
-| **Iframe URL**  | URL for the iframe content displayed in the popup.          | `https://example.com`                 |
-| **Icon Path**   | SVG or image URL for the icon.                              | Default SVG icon                      |
-| **Hover Text**  | Tooltip text displayed when hovering over the icon.         | `"Click on the icon to open"`         |
-| **Caption Text**| Text displayed below the icon.                              | `"Click on the icon to open"`         |
+The following parameters can be configured via the property pane of the `IconToOpenPopupWebPart`:
+
+| **Property**       | **Description**                                               | **Default Value**           |
+|---------------------|---------------------------------------------------------------|-----------------------------|
+| **iframeUrl**       | The URL of the content to display in the iframe popup.         | `https://example.com`       |
+| **iconPath**        | The path to the icon image (SVG or image URL).                 | `https://picsum.photos/200` |
+| **hoverText**       | The tooltip text displayed when hovering over the icon.        | `Click on the icon to open` |
+| **captionText**     | The text displayed below the icon.                             | `Click on the icon to open` |
+| **imageWidth**      | The width of the icon image in pixels.                         | `200`                       |
+| **imageHeight**     | The height of the icon image in pixels.                        | `200`                       |
+| **iframeWidth**     | The width of the iframe popup in pixels.                       | `320`                       |
+| **iframeHeight**    | The height of the iframe popup in pixels.                      | `480`                       |
+
+---
+
+### **Example Configuration**
+
+To configure the web part, use the property pane and adjust the following values:
+
+- **Iframe URL**: `https://www.example.com/dashboard`
+- **Icon Path**: `https://via.placeholder.com/150`
+- **Hover Text**: `Open the dashboard`
+- **Caption Text**: `Click to view more details`
+- **Image Width**: `150`
+- **Image Height**: `150`
+- **Iframe Width**: `400`
+- **Iframe Height**: `600`
+
+This configuration would:
+- Display an icon of `150x150` pixels.
+- Open an iframe popup of size `400x600` pixels.
+- Show the tooltip `Open the dashboard` on hover.
+- Display the caption `Click to view more details` below the icon.
+
+---
+
+You can customize these values based on your requirements to seamlessly integrate the web part into your SharePoint pages.
+       |
 
 ---
 
